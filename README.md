@@ -72,6 +72,27 @@ A standout capability is **map-based ship tracking**: **Importers/Exporters** ca
 
 ---
 
+## Conclusion
+
+NeoPort streamlines end-to-end port operations—from shipping requests and berth scheduling to cargo assignments and role-based oversight—while keeping an auditable record of every critical action. The built-in **live ship location** view gives Importers/Exporters and port staff shared situational awareness, reducing back-and-forth and improving decision speed.
+
+## Future Work
+
+- **Real-time vessel tracking:** Integrate AIS/third-party APIs for continuous position updates, geofencing, and ETA refinements.
+- **Berth conflict solver:** Add automated scheduling heuristics (greedy / ILP) to flag and resolve time-window overlaps.
+- **Notifications:** Email/SMS/WhatsApp alerts for approvals, berth changes, and geofence events.
+- **Advanced analytics:** Dashboards for turnaround time, berth utilization, cargo dwell time, SLAs, demurrage forecasts.
+- **Permissions & security:** Fine-grained RBAC, session hardening, CSRF protection, and activity-log integrity checks.
+- **Data workflows:** Import/export of manifests; EDIFACT/EDI connectors for shipping partners.
+- **API layer:** REST/JSON (later GraphQL) for mobile apps and partner integrations.
+- **Operational UX:** Offline-capable PWA for yard tasks; barcode/QR support for cargo hand-offs.
+- **Internationalization:** Multi-language UI; time-zone aware scheduling; multi-tenant (multi-port) support.
+- **DevOps:** Docker compose for local dev, CI/CD pipeline, nightly backups, and repeatable DB migrations.
+- **Testing:** Unit/integration tests and end-to-end UI tests to guard core workflows.
+
+
+---
+
 ## Quick Start (Manual Download)
 
 1. **Download the source**
