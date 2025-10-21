@@ -117,17 +117,18 @@ NeoPort streamlines end-to-end port operations—from shipping requests and bert
 
 ## Future Work
 
-- **Real-time vessel tracking:** Integrate AIS/third-party APIs for continuous position updates, geofencing, and ETA refinements.
-- **Berth conflict solver:** Add automated scheduling heuristics (greedy / ILP) to flag and resolve time-window overlaps.
-- **Notifications:** Email/SMS/WhatsApp alerts for approvals, berth changes, and geofence events.
-- **Advanced analytics:** Dashboards for turnaround time, berth utilization, cargo dwell time, SLAs, demurrage forecasts.
-- **Permissions & security:** Fine-grained RBAC, session hardening, CSRF protection, and activity-log integrity checks.
-- **Data workflows:** Import/export of manifests; EDIFACT/EDI connectors for shipping partners.
-- **API layer:** REST/JSON (later GraphQL) for mobile apps and partner integrations.
-- **Operational UX:** Offline-capable PWA for yard tasks; barcode/QR support for cargo hand-offs.
-- **Internationalization:** Multi-language UI; time-zone aware scheduling; multi-tenant (multi-port) support.
-- **DevOps:** Docker compose for local dev, CI/CD pipeline, nightly backups, and repeatable DB migrations.
-- **Testing:** Unit/integration tests and end-to-end UI tests to guard core workflows.
+- **Live ship tracking:** Connect to a live data source so the map updates automatically.
+- **Smarter berth scheduling:** Suggest the best berth/time and warn if there’s a clash.
+- **Alerts & notifications:** Email/SMS/WhatsApp when a request is approved, a berth changes, or a ship enters/leaves an area.
+- **Better reports:** Easy PDF/CSV downloads, daily/weekly summaries, and simple KPI charts.
+- **Stronger security:** Two-factor login, better password rules, and clearer permissions for each role.
+- **Import/Export data:** Upload Excel/CSV to add requests or cargo in bulk; export records for sharing.
+- **Mobile friendly & app-ready:** Improve small-screen views; plan a simple Android/iOS app later.
+- **Offline tasks for yard teams:** Let users record work without internet and sync when back online.
+- **Multi-language & time zones:** Bangla/English UI and time shown in the user’s local zone.
+- **Simple public API:** REST endpoints so partners can submit requests and check status.
+- **Easy setup:** Docker for one-click local setup and automatic database backups.
+- **Basic testing:** Add tests for key pages and forms to prevent-breaking changes.
 
 
 ---
