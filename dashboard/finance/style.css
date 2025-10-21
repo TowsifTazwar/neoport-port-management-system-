@@ -1,0 +1,15 @@
+/* Role-local styles */
+*{box-sizing:border-box;font-family:Inter,Arial,sans-serif}
+body{margin:0;background:#f4f7fb;color:#0f172a}
+.topbar{background:#0b1320;color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:center}
+.container{max-width:1100px;margin:18px auto;padding:0 12px}
+.card{background:#fff;padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.06);margin-bottom:12px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:8px 10px;border-bottom:1px solid #eef2f6;text-align:left}
+.btn{padding:6px 10px;border-radius:6px;border:0;cursor:pointer}
+.btn.primary{background:#0ea5a4;color:#fff}
+.btn.danger{background:#ef4444;color:#fff}
+.flex{display:flex;gap:8px;align-items:center}
+.small{font-size:13px;color:#6b7280}
+form label{display:block;margin:6px 0 3px;font-weight:600}
+input,select,textarea{width:100%;padding:8px;border-radius:6px;border:1px solid #d1d5db}

@@ -1,0 +1,57 @@
+/* Reset & base */
+*{box-sizing:border-box}
+body{
+  font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  background:#f3f6fb;
+  margin:0;padding:20px;color:#222;
+}
+
+/* Card */
+.card{
+  background:#fff;
+  border-radius:10px;
+  max-width:1100px;
+  margin:18px auto;
+  padding:20px;
+  box-shadow:0 6px 24px rgba(20,30,50,0.06);
+}
+
+/* Topbar */
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 0;margin-bottom:8px}
+.topbar a{color:#0b5ed7;text-decoration:none}
+
+/* Forms */
+input, select, textarea, button{
+  font-size:15px;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid #e2e8f0;
+  margin:8px 0;
+  width:100%;
+}
+.form-inline{display:flex;gap:10px;align-items:center}
+.form-inline input{flex:1}
+.form-inline button{flex:0 0 auto}
+
+/* Buttons */
+button{
+  background:#0b5ed7;color:#fff;border:none;cursor:pointer;border-radius:8px;padding:10px 14px;
+}
+button:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(11,94,215,0.18)}
+
+/* Table */
+.table-responsive{overflow:auto;margin-top:12px}
+table{width:100%;border-collapse:collapse}
+table th, table td{padding:10px;border:1px solid #eef2f6;text-align:left;font-size:14px}
+table thead th{background:#f8fafc;font-weight:600}
+
+/* Messages */
+.error{color:#b91c1c}
+.info{color:#0b5ed7}
+.success{color:#0f5132}
+
+/* Responsive */
+@media (max-width:760px){
+  .form-inline{flex-direction:column}
+  table th, table td{font-size:13px}
+}

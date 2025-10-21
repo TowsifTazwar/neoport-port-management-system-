@@ -1,0 +1,82 @@
+:root{
+  --ink:#0f172a; --muted:#6b7280; --bg:#f5f7fb; --card:#fff;
+  --brand:#0a3768; --accent:#00bfa6; --ring:#9bd6ff;
+  --shadow:0 24px 60px rgba(0,0,0,.08);
+  --line:#dbe3f0;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+  color:var(--ink); background:var(--bg);
+}
+
+/* Top bar */
+.topbar{background:#073055; color:#fff}
+.topbar .wrap{
+  max-width:1120px; margin:0 auto; padding:14px 20px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.brand{font-weight:700}
+.topbar nav a{
+  color:#eaf6ff; text-decoration:none; margin-left:18px;
+}
+.topbar nav a.btn{
+  background:#0e5fa1; padding:8px 12px; border-radius:10px; color:#fff;
+}
+.topbar nav a:hover{text-decoration:underline}
+
+/* Layout */
+.page{max-width:1120px; margin:24px auto 64px; padding:0 16px}
+.back{display:inline-block; margin:8px 0 14px; color:#305c87; text-decoration:none}
+.back:hover{text-decoration:underline}
+h1{margin:0 0 4px; font-size:clamp(1.6rem,4vw,2.2rem)}
+h1 span{white-space:nowrap}
+.sub{margin:0 0 18px; color:var(--muted)}
+
+/* Alerts */
+.alert{padding:12px 14px; border-radius:12px; margin:10px 0 16px 0; font-size:.95rem}
+.alert.ok{background:#e7fff4; color:#0a6b4c; border:1px solid #a6f0d2}
+.alert.error{background:#ffefef; color:#9a1d1d; border:1px solid #f7b9b9}
+
+/* Card / Form */
+.card{
+  background:var(--card); border-radius:16px; box-shadow:var(--shadow);
+  padding:22px; border:1px solid var(--line);
+}
+.form .grid{
+  display:grid; gap:16px;
+  grid-template-columns:1fr 1fr;
+}
+@media (max-width:840px){
+  .form .grid{grid-template-columns:1fr}
+}
+
+.field{display:grid; gap:6px}
+label{font-weight:600}
+input, select, textarea{
+  width:100%; padding:12px 14px; font-size:1rem;
+  border:1.5px solid var(--line); border-radius:12px; outline:none;
+  background:#fff;
+}
+input:focus, select:focus, textarea:focus{
+  border-color:#73b7ff; box-shadow:0 0 0 4px var(--ring)
+}
+
+.password-row{display:flex; align-items:center; gap:8px}
+.password-row input{flex:1}
+.toggle{
+  height:44px; min-width:44px; border-radius:12px; border:1.5px solid var(--line);
+  background:#f7fbff; cursor:pointer;
+}
+.hint{color:var(--muted); font-size:.85rem}
+
+.actions{margin-top:6px}
+.btn-primary{
+  background:var(--accent);
+  color:#fff;              /* ✅ always white text */
+  font-weight:800; border:0; border-radius:12px;
+  height:46px; padding:0 18px; cursor:pointer;
+}
+.btn-primary:hover{filter:brightness(.97)}

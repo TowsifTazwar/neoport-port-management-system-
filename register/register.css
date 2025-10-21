@@ -1,0 +1,70 @@
+/* pms/register/register.css — First-layer registration */
+
+/* General reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* Header navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #002b5c;
+  color: white;
+}
+.navbar .logo { font-weight: bold; font-size: 1.2rem; }
+.navbar nav a { color: white; margin-left: 20px; text-decoration: none; }
+.navbar nav a:hover { text-decoration: underline; }
+.navbar .btn-register {
+  background: #00bfa6; padding: 8px 15px; border-radius: 6px; font-weight: bold;
+}
+.navbar .btn-register:hover { background: #009e89; }
+
+/* Container centers everything */
+.register-container {
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  min-height: calc(100vh - 140px); text-align: center; padding: 40px 20px;
+}
+.register-container h1 { font-size: 2.5rem; margin-bottom: 10px; color: #222; }
+.register-container p { font-size: 1.1rem; margin-bottom: 40px; color: #555; }
+
+/* Card layout */
+.register-options {
+  display: flex; justify-content: center; align-items: stretch; gap: 30px;
+  max-width: 1100px; width: 100%; flex-wrap: nowrap; /* keep 3 in one row */
+}
+.register-card {
+  background: #fff; border-radius: 12px; padding: 30px 25px; flex: 1; min-width: 280px;
+  text-align: center; box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; color: inherit; text-decoration: none;
+  display: block; position: relative; pointer-events: auto;
+}
+.register-card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+.register-card .icon { font-size: 2rem; margin-bottom: 10px; }
+.register-card h2 { font-size: 1.4rem; margin: 15px 0; color: #222; }
+.register-card p { font-size: 0.95rem; margin-bottom: 20px; color: #666; }
+
+/* Make children inside the card click-through so only the <a> handles clicks */
+.register-card * { pointer-events: none; }
+
+/* Green CTA text (plain text inside the card) */
+.cta-text {
+  color: #00796b;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin-top: 8px;
+}
+
+/* Footer */
+footer {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 15px 40px; background: #eee; font-size: 0.9rem; color: #555;
+}
+footer nav a { margin-left: 15px; text-decoration: none; color: #555; }
+footer nav a:hover { text-decoration: underline; }
