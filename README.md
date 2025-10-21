@@ -136,7 +136,7 @@ NeoPort streamlines end-to-end port operations—from shipping requests and bert
 ## Quick Start (Manual Download)
 
 1. **Download the source**
-   - Repo page → green **Code** → **Download ZIP**.
+   - Repo page → **Download ZIP**.
    - Extract; you’ll get `neoport-port-management-system-main` (or similar).
 
 2. **Move to web root**
