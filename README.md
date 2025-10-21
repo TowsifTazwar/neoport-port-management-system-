@@ -31,7 +31,8 @@ A standout capability is **map-based ship tracking**: **Importers/Exporters** ca
 - Track handling progress; connect to yard/warehouse movements (extensible).
 
 ### 4) Role-Based Dashboards
-**System Admin**
+
+- **System Admin**
   - User/role management (RBAC), password resets, and access policies
   - System settings, audit controls, backups & maintenance
 
