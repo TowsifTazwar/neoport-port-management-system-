@@ -10,7 +10,6 @@ A standout capability is **map-based ship tracking**: **Importers/Exporters** ca
 - **Operational clarity:** one system of record for requests, vessels, berths, and cargo.
 - **Fewer errors:** structured workflows + foreign keys + validations.
 - **Transparency:** **live location view** for Importers/Exporters reduces back-and-forth.
-- **Accountability:** all critical actions land in **Activity Logs** with timestamps.
 - **Extendable:** modular structure leaves room for notifications, APIs, analytics.
 
 ---
@@ -32,17 +31,56 @@ A standout capability is **map-based ship tracking**: **Importers/Exporters** ca
 - Track handling progress; connect to yard/warehouse movements (extensible).
 
 ### 4) Role-Based Dashboards
-- **Importer / Exporter:** request status, **live ship location**, ETA, berth window.
-- **Customs & Compliance:** checks, flags/holds, clearance history.
-- **Logistics / Transport:** tasks, hand-offs, progress, yard pointers.
-- **Port Director / Admin:** KPIs, berth occupancy, approvals, activity feed.
+**System Admin**
+  - User/role management (RBAC), password resets, and access policies
+  - System settings, audit controls, backups & maintenance
+
+- **Port Director**
+  - Executive KPIs, berth occupancy/utilization
+  - Global vessel/berth schedule overview and conflict detection
+  - Posts urgent notices and overviews port operations
+
+- **Shipping Company (Agent)**
+  - Create/manage **Shipping Requests**, upload documents, track approvals
+  - Vessel schedule view, ETA windows, assigned berth slot
+  - Updates **Live Ship Location** for their represented vessels
+
+- **Harbor Master**
+  - Port call register, pilotage coordination, docking/undocking clearances
+  - Berth assignments; safety checks
+  - Approve/rejects shipping requests
+
+- **Customs & Compliance**
+  - Document verification, flags/holds, risk notes
+  - Visibility into request status and cargo declarations
+  - Approves/rejects shipping, importer and exporter requests.
+
+- **Cargo & Warehouse**
+  - **Cargo Assignments**, storage slots, tally/hand-off records
+  - Updates Yard/warehouse inventory according to containers and batches
+
+- **Logistics & Transport**
+  - Gate-in/out, trucking dispatch, yard moves, route scheduling
+  - Assigns Transport according to approved requests
+  - Updates cargo status which the importer/exporter can view.
+
+- **Importer**
+  - Own requests/shipments: status, approvals, documentation checklist
+  - ETA and assigned berth window
+  - **Live Ship Location** for their vessels
+
+- **Exporter**
+  - Booking/requests for outbound cargo, documentation
+  - Vessel schedule for sailings
+  - **Live Ship Location** for relevant vessels
+
 
 ### 5) **Live Ship Location (Map)**
 - Map view (Leaflet/Google/Mapbox or equivalent) shows **current / last-known** ship position.
 - Vessel markers link to **shipping requests, berth slots, and cargo**.
 - Access controlled by role: Importer/Exporter can view only their own vessels.
 
-### 6) KPIs, Search, and Auditability
+### 6) KPIs, Search and Auditability
 - KPI cards (pending approvals, occupied berths, departures today, etc.).
 - Global search & filters (vessel, berth, request, date, status).
 
