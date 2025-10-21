@@ -1,0 +1,36 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets (NEVER commit)
+.env
+.env.local
+*.key
+*.pem
+
+# Dependencies
+node_modules/
+vendor/
+
+# Builds / caches
+dist/
+build/
+.cache/
+.tmp/
+
+# Runtime dirs (keep the folder with a .gitkeep file)
+uploads/**
+!uploads/.gitkeep
+storage/**
+!storage/.gitkeep
+logs/**
+!logs/.gitkeep
+
+# Database dumps (ignore all)...
+*.sql
+# ...but keep versioned schema/migrations/seeds
+!database/schema.sql
+!database/migrations/*.sql
+!database/seeds/*.sql
